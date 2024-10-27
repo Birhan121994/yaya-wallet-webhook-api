@@ -14,7 +14,7 @@ from django.core.cache import cache
 # Load the secret key from environment variable
 
 SECRET_KEY = config('SECRET_KEY')
-# SECRET_KEY = 'django-insecure-0n8v09g#j1foiskz7=-m1a=igd-1rn#yp8@8$)*l^n$##ay3x0'
+
 
 @method_decorator(csrf_exempt, name='dispatch')
 class WebhookView(View):
